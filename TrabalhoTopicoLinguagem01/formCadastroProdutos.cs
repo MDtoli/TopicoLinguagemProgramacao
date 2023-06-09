@@ -80,7 +80,7 @@ namespace TrabalhoTopicoLinguagem01
 
         private void buttonEditar_Click(object sender, EventArgs e)
         {
-            if (MessageBox.Show("Deseja altera um produto?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
+            if (MessageBox.Show("Deseja editar um produto?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes)
             {
                 labelId.Visible = true;
                 textBoxId.Visible = true;
@@ -89,6 +89,7 @@ namespace TrabalhoTopicoLinguagem01
                 textBoxCategoria.Enabled = true;
                 textBoxQuantidade.Enabled = true;
             }
+            else
             {
                 textBoxId.Enabled = false;
                 textBoxNome.Enabled = false;
